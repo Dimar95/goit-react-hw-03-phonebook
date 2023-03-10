@@ -15,8 +15,7 @@ class AddContact extends Component {
     this.setState({ number: e.currentTarget.value });
   };
   reset = () => {
-    this.setState({ number: '' });
-    this.setState({ name: '' });
+    this.setState({ number: '', name: ''  });
   };
   render() {
     return (
@@ -61,5 +60,5 @@ class AddContact extends Component {
 export default AddContact;
 
 AddContact.propTypes = {
-  onAddContact: PropTypes.func
+  onAddContact: PropTypes.func.isRequired
 }
